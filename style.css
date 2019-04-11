@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Plain-Regular';
+    src: url("../assets/fonts/Plain-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plain-RegularIta';
+    src: url("../assets/fonts/Plain-RegularIta.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plain-Light';
+    src: url("../assets/fonts/Plain-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plain-LightIta';
+    src: url("../assets/fonts/Plain-LightIta.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plain-Medium';
+    src: url("../assets/fonts/Plain-Medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plain-Bold';
+    src: url("../assets/fonts/Plain-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plain-BoldIta';
+    src: url("../assets/fonts/Plain-BoldIta.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.button--outline {
+    background-color: transparent;
+    border: 1px solid #E8E8E8;
+    color: #3AD3D5;
+    -webkit-transition: all 700ms;
+    -o-transition: all 700ms;
+    transition: all 700ms;
+    padding: 13px 34px;
+    border-radius: 3px;
+    margin: 0;
+    padding: 19px 34px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.button--outline:hover {
+    border: 1px solid #3AD3D5;
+    background-color: #3AD3D5;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button {
+    border-radius: 3px;
+    margin: 0;
+    padding: 19px 34px;
+    background: #3AD3D5;
+    background-color: #3AD3D5;
+    color: #fff;
+    font-size: 15px;
+    display: inline-block;
+    -webkit-transition: all 900ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 900ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 900ms cubic-bezier(0.77, 0, 0.175, 1);
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.button:hover {
+    background-color: #0E0E0E;
+    color: #fff;
+    -webkit-transition: background-color 600ms cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: background-color 600ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: background-color 600ms cubic-bezier(0.77, 0, 0.175, 1);
+    text-decoration: none;
+}
+
+.custom-handle {
+    width: 3em !important;
+    height: 1.6em !important;
+    top: 50% !important;
+    margin-top: -.8em !important;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+.custom-roundhandle {
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 25px !important;
+    top: 50% !important;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+body {
+    color: #484748;
+    font-family: 'Plain-Regular';
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+}
+
+div.modal-body ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px 0;
+}
+
+li a {
+    color: #0E0E0E;
+}
+
+li a:hover {
+    color: #3AD3D5;
+    text-decoration: none;
+}
+
+.sliderproyect label {
+    position: absolute;
+    width: 20px;
+    margin-left: -10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 80px;
+    color: #3AD3D5;
+    font-family: 'Plain-Bold';
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: #0E0E0E;
+}
+
+#totalpoints span {
+    color: #0E0E0E;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -.01em;
+    margin-bottom: 32px;
+}
+
+h5 span {
+    color: #3ad3d5;
+    font-weight: 600;
+}
+
+.project-list-item {
+    padding: 16px 0;
+}
+
+.projects-list {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.projects-list input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.projects-list:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.projects-list input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.projects-list input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.projects-list .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
